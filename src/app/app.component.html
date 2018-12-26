@@ -1,0 +1,10 @@
+<app-top-nav [config]="topNavConfig" class="fixed-topnav" fxHide.gt-xs></app-top-nav>
+<mat-sidenav-container [hasBackdrop]="navData.hasBackdrop">
+  <mat-sidenav [position]="navData.position" (openedChange)="onNavDraweropenChange()" #appDrawer [mode]="navData.mode" [opened]="navData.opened">
+    <mat-nav-list>
+      <app-menu-list-item *ngFor="let item of navData.navItems" [item]="item"></app-menu-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <app-top-nav [config]="navData"  fxHide.xs></app-top-nav>
+  <router-outlet></router-outlet>
+</mat-sidenav-container>
