@@ -10,13 +10,32 @@
   <span>{{config?.appName ? config.appName : 'Default name'}}</span>
 
   <span class="toolbar-spacer"></span>
-  <ng-container *ngIf="config?.menuItems">
-      <button mat-icon-button [matMenuTriggerFor]="menu">
-          <mat-icon>more_vert</mat-icon>
-        </button>
-        <mat-menu #menu="matMenu">
-            <button mat-menu-item *ngFor="let item of config.menuItems" >{{item.displayName}}</button>
-        </mat-menu>
-  </ng-container>
+  <div class="right-nav">
+      <ng-container *ngIf="config?.rightMenus">
+          <!-- <button mat-icon-button [matMenuTriggerFor]="x.menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <app-menu-list-item #x="menuInMenuListItemComponent" [menus]="config.rightMenus"></app-menu-list-item> -->
+            <span *ngFor="let item of config?.rightMenus">
+                <!-- Handle branch node buttons here -->
+                <span *ngIf="item.children && item.children.length > 0">
+                  <button mat-button [matMenuTriggerFor]="menu.childMenu"
+                  [disabled]="item.disabled">
+                  <mat-icon>{{item.iconName}}</mat-icon>
+                  <span>{{item.displayName}}</span>
+                  </button>
+                  <app-menu-list-item #menu [menus]="item.children"></app-menu-list-item>
+                </span>
+                <!-- Leaf node buttons here -->
+                <span *ngIf="!item.children || item.children.length === 0">
+                  <button mat-button color="primary" [routerLink]="item.route">
+                      <mat-icon>{{item.iconName}}</mat-icon>
+                      <span>{{item.displayName}}</span>
+                  </button>
+                </span>
+              </span>
+      </ng-container>
+  </div>
+  
   
 </mat-toolbar>

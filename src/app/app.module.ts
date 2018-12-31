@@ -44,7 +44,7 @@ import {
 } from '@angular/material';
 import {AppComponent} from './app.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
-import {MenuListItemComponent} from './menu-list-item/menu-list-item.component';
+import {NavListItemComponent as NavListItemComponent} from './nav-list-item/nav-list-item.component';
 import {AppRoutingModule} from './app-routing.module';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
@@ -52,6 +52,7 @@ import { ThirdComponent } from './third/third.component';
 import { FourthComponent } from './fourth/fourth.component';
 import { NavService } from './nav.service';
 import { TopNavComponent } from './top-nav/top-nav.component';
+import { MenuListItemComponent } from './menu-list-item/menu-list-item.component';
 
 /**
  * NgModule that includes all Material modules that are required.
@@ -115,6 +116,7 @@ export class MaterialModule {}
   ],
   declarations: [
     AppComponent,
+    NavListItemComponent,
     MenuListItemComponent,
     FirstComponent,
     SecondComponent,

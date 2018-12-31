@@ -2,7 +2,7 @@
 <mat-sidenav-container [hasBackdrop]="navData.hasBackdrop">
   <mat-sidenav [position]="navData.position" (openedChange)="onNavDraweropenChange()" #appDrawer [mode]="navData.mode" [opened]="navData.opened">
     <mat-nav-list>
-      <app-menu-list-item *ngFor="let item of navData.navItems" [item]="item"></app-menu-list-item>
+      <app-nav-list-item *ngFor="let item of navData.navItems" [item]="item"></app-nav-list-item>
     </mat-nav-list>
   </mat-sidenav>
   <app-top-nav [config]="navData"  fxHide.xs></app-top-nav>
