@@ -47,12 +47,11 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import {NavListItemComponent as NavListItemComponent} from './nav-list-item/nav-list-item.component';
 import {AppRoutingModule} from './app-routing.module';
 import { FirstComponent } from './first/first.component';
-import { SecondComponent } from './second/second.component';
-import { ThirdComponent } from './third/third.component';
-import { FourthComponent } from './fourth/fourth.component';
 import { NavService } from './nav.service';
 import { TopNavComponent } from './top-nav/top-nav.component';
 import { MenuListItemComponent } from './menu-list-item/menu-list-item.component';
+import { MaterialDrawerComponent } from './material-drawer/material-drawer.component';
+import { NavListItemMiniComponent } from './nav-list-item-mini/nav-list-item-mini.component';
 
 /**
  * NgModule that includes all Material modules that are required.
@@ -118,11 +117,10 @@ export class MaterialModule {}
     AppComponent,
     NavListItemComponent,
     MenuListItemComponent,
+    MaterialDrawerComponent,
     FirstComponent,
-    SecondComponent,
-    ThirdComponent,
-    FourthComponent,
-    TopNavComponent
+    TopNavComponent,
+    NavListItemMiniComponent
   ],
   bootstrap: [AppComponent],
   providers: [NavService]

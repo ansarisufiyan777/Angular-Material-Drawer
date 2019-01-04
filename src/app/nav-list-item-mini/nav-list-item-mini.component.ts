@@ -5,9 +5,9 @@ import {NavService} from '../nav.service';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 
 @Component({
-  selector: 'app-nav-list-item',
-  templateUrl: './nav-list-item.component.html',
-  styleUrls: ['./nav-list-item.component.scss'],
+  selector: 'app-nav-list-item-mini',
+  templateUrl: './nav-list-item-mini.component.html',
+  styleUrls: ['./nav-list-item-mini.component.scss'],
   animations: [
     trigger('indicatorRotate', [
       state('collapsed', style({transform: 'rotate(0deg)'})),
@@ -18,8 +18,7 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
     ])
   ]
 })
-export class NavListItemComponent implements OnInit {
-
+export class NavListItemMiniComponent implements OnInit {
   expanded: boolean;
   @HostBinding('attr.aria-expanded') ariaExpanded = this.expanded;
   @Input() item: NavItem;
@@ -55,4 +54,5 @@ export class NavListItemComponent implements OnInit {
       this.expanded = !this.expanded;
     }
   }
+
 }

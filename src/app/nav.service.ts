@@ -6,9 +6,11 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class NavService {
   public appDrawer: any;
+  public isMiniVarient: any;
+  public isExpanded: boolean;
   public currentUrl = new BehaviorSubject<string>(undefined);
   public isDrawerOpened = false;
-  public onNavChange: EventEmitter<boolean> = new EventEmitter();
+  public onNavChange: any= new EventEmitter();
   constructor(private router: Router) {
 
     //Routing Event
@@ -17,21 +19,42 @@ export class NavService {
         this.currentUrl.next(event.urlAfterRedirects);
       }
     });
-    
+
   }
 
-  public emintNavChange(){
-    this.onNavChange.emit(this.appDrawer); 
+  public emintNavChange() {
+    this.onNavChange.emit(this.appDrawer.opened);
   }
   public closeNav() {
-    this.appDrawer.close();
+    if (!this.isMiniVarient)
+      this.appDrawer.close();
+    else {
+      this.isExpanded = false;
+      this.onNavChange.emit(this.getData(this.isExpanded));      
+    }
   }
 
   public openNav() {
-    this.appDrawer.open();
+    if (!this.isMiniVarient)
+      this.appDrawer.open();
+    else {
+      this.isExpanded = true;
+      this.onNavChange.emit(this.getData(this.isExpanded));      
+    }
   }
 
   public toggleNav() {
-    this.appDrawer.toggle();
+    if (!this.isMiniVarient)
+      this.appDrawer.toggle();
+    else {
+      this.isExpanded = !this.isExpanded;
+      this.onNavChange.emit(this.getData(this.isExpanded));
+    }
+  }
+  getData(b): object {
+    return {
+      drawer: this.appDrawer,
+      isOpened: b
+    }
   }
 }
