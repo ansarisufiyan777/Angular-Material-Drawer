@@ -8,4 +8,8 @@ After installing ghpages, use Angular CLI to build the project. For that, run th
 
 For the last step, run the command ngh -no-silent to publish
 
->> ngh -no-silent
+>> ngh --dir=dist/AngularMaterialDrawer
+
+Changes in index.html
+
+>> <base href="">
