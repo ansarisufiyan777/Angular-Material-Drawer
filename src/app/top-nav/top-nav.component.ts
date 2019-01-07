@@ -7,7 +7,7 @@ import { NavService } from '../nav.service';
   styleUrls: ['./top-nav.component.scss']
 })
 export class TopNavComponent implements OnInit {
-  @Input() config: object;
+  @Input() config: any;
   constructor(public navService: NavService) { }
   public isDrawerOpened;
   ngOnInit() {

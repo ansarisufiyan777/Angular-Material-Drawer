@@ -3,7 +3,7 @@
   "opened": false,
   "mode": "push",
   "toggleIcon": "menu",
-  "miniVarient":true,
+  "miniVarient":false,
   "toggleHtml": "",
   "rightMenus":{
     "data":[

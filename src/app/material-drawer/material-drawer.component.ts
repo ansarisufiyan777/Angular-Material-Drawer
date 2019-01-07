@@ -19,8 +19,8 @@ export class MaterialDrawerComponent implements AfterViewInit {
   version = VERSION;
 
 
-  navData: object = content;
-  constructor(private navService: NavService) {
+  navData: any = content;
+  constructor(public navService: NavService) {
     
     this.navService.isMiniVarient = this.navData['miniVarient'];
     this.navService.isExpanded = this.navData['opened'];
