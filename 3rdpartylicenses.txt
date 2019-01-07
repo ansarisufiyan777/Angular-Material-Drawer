@@ -1,5 +1,5 @@
 events
-MIT - Sufiyan
+MIT
 MIT
 
 Copyright Joyent, Inc. and other Node contributors.
