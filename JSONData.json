@@ -1,0 +1,676 @@
+[
+    {
+      "identifier": "pokemon",
+      "name": "Pokemon",
+      "publisher": "Asna Soft.",
+      "tray_image_file": "https://imgur.com/6qHmdjO.png",
+      "publisher_email": "sufiyan2you@gmail.com",
+      "publisher_website": "http://infiniteloops.info",
+      "privacy_policy_website": "http://infiniteloops.info/privacy-policy-whatsapp-stickers/",
+      "license_agreement_website": "http://infiniteloops.info/privacy-policy-whatsapp-stickers/",
+      "stickers": [
+        {
+          "image_file": "https://imgur.com/b3QAsLp.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/REv7Gdx.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/bzfkaoX.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/9T9pzOu.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/FqlolgW.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/9LbmOgP.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/XurtUaS.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/JNC34Kt.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/IUM1MQb.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/eKYCLbR.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/PtXYZnX.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/FlKGOkI.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/YHAKK4K.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "friends",
+      "name": "Friends",
+      "publisher": "Asna Soft.",
+      "tray_image_file": "https://imgur.com/pOG2kZc.png",
+      "publisher_email": "sufiyan2you@gmail.com",
+      "publisher_website": "http://infiniteloops.info",
+      "privacy_policy_website": "http://infiniteloops.info/privacy-policy-whatsapp-stickers/",
+      "license_agreement_website": "http://infiniteloops.info/privacy-policy-whatsapp-stickers/",
+      "stickers": [
+        {
+          "image_file": "https://imgur.com/0MGPsOl.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/w5fJGd7.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/70zQcO0.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/5fryhHQ.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/wmMnDWd.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/aR4wSvN.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/1SDPlxk.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/OGBGTRS.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/8BxVJ3v.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/nHAOgrp.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/wQZSQix.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/7e5jLff.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/1RcgZ8u.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/5Nl2NVy.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/AM9qWIa.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "avengers",
+      "name": "Avengers",
+      "publisher": "Asna Soft.",
+      "tray_image_file": "https://imgur.com/A1BjiIo.png",
+      "publisher_email": "sufiyan2you@gmail.com",
+      "publisher_website": "http://infiniteloops.info",
+      "privacy_policy_website": "http://infiniteloops.info/privacy-policy-whatsapp-stickers/",
+      "license_agreement_website": "http://infiniteloops.info/privacy-policy-whatsapp-stickers/",
+      "stickers": [
+        {
+          "image_file": "https://imgur.com/yRukF46.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/x3JRFtc.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/76B3EJQ.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/7GZ5tnR.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/CgoS4c6.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/9Q2Lfag.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/IcHZIGn.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/Ni9iYHu.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/OHqsxdr.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "minions",
+      "name": "Minions",
+      "publisher": "Asna Soft.",
+      "tray_image_file": "https://imgur.com/YMAtWo3.png",
+      "publisher_email": "sufiyan2you@gmail.com",
+      "publisher_website": "http://infiniteloops.info",
+      "privacy_policy_website": "http://infiniteloops.info/privacy-policy-whatsapp-stickers/",
+      "license_agreement_website": "http://infiniteloops.info/privacy-policy-whatsapp-stickers/",
+      "stickers": [
+        {
+          "image_file": "https://imgur.com/TZeSSb3.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/fgXXVkq.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/GouALby.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/aWHg9z6.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/WDW6WSf.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/q22mYiO.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/iSwB3jR.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/UjFDvct.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/hrQzGcq.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/yGYw1Uw.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/bBhCq6v.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/xv3hOK2.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/lVQrwDK.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "superheros",
+      "name": "Super Heros",
+      "publisher": "Asna Soft.",
+      "tray_image_file": "https://imgur.com/cQiK3EU.png",
+      "publisher_email": "sufiyan2you@gmail.com",
+      "publisher_website": "http://infiniteloops.info",
+      "privacy_policy_website": "http://infiniteloops.info/privacy-policy-whatsapp-stickers/",
+      "license_agreement_website": "http://infiniteloops.info/privacy-policy-whatsapp-stickers/",
+      "stickers": [
+        {
+          "image_file": "https://imgur.com/8Ki5aC3.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/FHlvGNZ.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/4kiDz8j.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/w32Olgn.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/15SYqzf.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "https://imgur.com/MD7p4I1.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "MemePack1",
+      "name": "Meme Pack - 1",
+      "publisher": "Asna Soft.",
+      "tray_image_file": null,
+      "publisher_email": "sufiyan2you@gmail.com",
+      "publisher_website": "http://infiniteloops.info",
+      "privacy_policy_website": "http://infiniteloops.info/privacy-policy-whatsapp-stickers/",
+      "license_agreement_website": "http://infiniteloops.info/privacy-policy-whatsapp-stickers/",
+      "stickers": [
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/1.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/2.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/3.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/4.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/5.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/6.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/7.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/8.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/9.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/10.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/11.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/12.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/13.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/14.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/15.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/192/16.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/17.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/18.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/19.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/20.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/21.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/22.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/23.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/24.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/25.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/26.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/27.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/28.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/29.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "image_file": "http://s.tcdn.co/8a1/9aa/8a19aab4-98c0-37cb-a3d4-491cb94d7e12/30.png",
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        }
+      ]
+    }
+  ]
