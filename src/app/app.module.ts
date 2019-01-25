@@ -47,7 +47,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import {NavListItemComponent as NavListItemComponent} from './nav-list-item/nav-list-item.component';
 import {AppRoutingModule} from './app-routing.module';
 import { FirstComponent } from './first/first.component';
-import { NavService } from './nav.service';
+import { NavService } from './utils/nav.service';
 import { TopNavComponent } from './top-nav/top-nav.component';
 import { MenuListItemComponent } from './menu-list-item/menu-list-item.component';
 import { MaterialDrawerComponent } from './material-drawer/material-drawer.component';

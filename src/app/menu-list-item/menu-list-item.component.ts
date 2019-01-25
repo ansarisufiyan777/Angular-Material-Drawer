@@ -1,7 +1,7 @@
 import {Component, HostBinding, Input, OnInit, ViewChild} from '@angular/core';
 import {NavItem} from '../nav-item';
 import {Router} from '@angular/router';
-import {NavService} from '../nav.service';
+import {NavService} from '../utils/nav.service';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 import { MatMenu } from '@angular/material';
 

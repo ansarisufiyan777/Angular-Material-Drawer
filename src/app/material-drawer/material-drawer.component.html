@@ -1,5 +1,5 @@
-<!-- <app-top-nav [config]="navData" class="fixed-topnav" fxHide.gt-xs></app-top-nav> -->
-<app-top-nav [config]="navData" class="fixed-topnav"></app-top-nav>
+<app-top-nav [config]="navData" class="fixed-topnav" fxHide.gt-xs></app-top-nav>
+<!-- <app-top-nav [config]="navData" class="fixed-topnav"></app-top-nav> -->
 <mat-sidenav-container [hasBackdrop]="navData.hasBackdrop" autosize>
   <mat-sidenav [ngClass]="navData.miniVarient && !navService?.isExpanded? 'mini-drawer': ''" [ngStyle]="navData.navItems.style? navData.navItems.style : ''" [position]="navData.position"
     (openedChange)="onNavDraweropenChange()" #appDrawer [mode]="navData.mode" [opened]="navData.miniVarient ? 'open' : navData.opened">
@@ -10,6 +10,6 @@
       <app-nav-list-item-mini *ngFor="let item of navData.navItems.data" [item]="item"></app-nav-list-item-mini>
     </mat-nav-list>
   </mat-sidenav>
-  <!-- <app-top-nav [config]="navData" fxHide.xs></app-top-nav> -->
-  <router-outlet></router-outlet>
+  <app-top-nav [config]="navData" fxHide.xs></app-top-nav>
+  <router-outlet class="below-toolbar"></router-outlet>
 </mat-sidenav-container>

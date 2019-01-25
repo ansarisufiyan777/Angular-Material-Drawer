@@ -1,7 +1,7 @@
 import { Component, ViewChild, ElementRef, ViewEncapsulation, AfterViewInit, Input, Output, OnInit } from '@angular/core';
 import { VERSION } from '@angular/material';
 import { NavItem } from './nav-item';
-import { NavService } from './nav.service';
+import { NavService } from './utils/nav.service';
 import { EventEmitter } from 'events';
 @Component({
   selector: 'angular-material-drawer',
