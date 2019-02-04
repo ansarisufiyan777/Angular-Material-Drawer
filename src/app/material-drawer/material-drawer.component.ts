@@ -19,7 +19,12 @@ export class MaterialDrawerComponent implements AfterViewInit {
   navData: any;
 
   constructor(public navService: NavService, public configService: ConfigService) {
-
+    this.configService.onJsonUpdate.subscribe(res => {
+      this.navData = res;
+      this.navService.isMiniVarient = this.navData['miniVarient'];
+      this.navService.isExpanded = this.navData['opened'];
+      this.onNgMatInit.emit(this.navData);
+    })
   }
 
   onNavDraweropenChange() {
@@ -27,13 +32,7 @@ export class MaterialDrawerComponent implements AfterViewInit {
     this.navService.emintNavChange();
   }
   ngAfterViewInit() {
-    this.navService.appDrawer = this.appDrawer;
-    this.configService.onJsonUpdate.subscribe(res => {
-      this.navData = res;
-      this.navService.isMiniVarient = this.navData['miniVarient'];
-      this.navService.isExpanded = this.navData['opened'];
-      this.onNgMatInit.emit(this.navData);
-    })
+    this.navService.appDrawer = this.appDrawer; 
   }
 
 }

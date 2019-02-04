@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { JsonEditorComponent, JsonEditorOptions } from 'ang-jsoneditor';
+import { ConfigService } from '../utils/config.service';
 
 @Component({
   selector: 'app-first',
@@ -6,10 +8,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./first.component.scss']
 })
 export class FirstComponent implements OnInit {
+  public editorOptions: JsonEditorOptions;
+  public data: any;
+  public navData: any;
 
-  constructor() { }
+  @ViewChild(JsonEditorComponent) editor: JsonEditorComponent;
 
-  ngOnInit() {
+  constructor(public configService: ConfigService) {
+    this.editorOptions = new JsonEditorOptions()
+    this.editorOptions.modes = ['code', 'text', 'tree', 'view']; // set all allowed modes
+    //this.options.mode = 'code'; //set only one mode
+    this.configService.onJsonUpdate.subscribe(res => {
+      this.navData = res;
+    })
+
   }
-
+  ngOnInit(): void {
+    //throw new Error("Method not implemented.");
+  }
+  getData($event) {
+    console.log($event)
+    this.configService.updateJSON($event);
+  }
 }

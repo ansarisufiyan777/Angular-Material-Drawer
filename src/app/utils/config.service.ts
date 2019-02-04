@@ -12,6 +12,9 @@ export class ConfigService {
   }
   public updateJSON(json:any){
     content = json;
-    this.onJsonUpdate.emit(content);
+
+    setTimeout(()=>{
+      this.onJsonUpdate.emit(content);
+    })
   }
 }

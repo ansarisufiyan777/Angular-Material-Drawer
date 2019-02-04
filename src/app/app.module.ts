@@ -40,7 +40,7 @@ import {
   MatSnackBarModule,
   MatTabsModule,
   MatToolbarModule,
-  MatTooltipModule
+  MatTooltipModule,
 } from '@angular/material';
 import {AppComponent} from './app.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
@@ -52,6 +52,7 @@ import { TopNavComponent } from './top-nav/top-nav.component';
 import { MenuListItemComponent } from './menu-list-item/menu-list-item.component';
 import { MaterialDrawerComponent } from './material-drawer/material-drawer.component';
 import { NavListItemMiniComponent } from './nav-list-item-mini/nav-list-item-mini.component';
+import { NgJsonEditorModule } from 'ang-jsoneditor';
 
 /**
  * NgModule that includes all Material modules that are required.
@@ -111,7 +112,8 @@ export class MaterialModule {}
     ReactiveFormsModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgJsonEditorModule 
   ],
   declarations: [
     AppComponent,
