@@ -11,14 +11,20 @@ import { ConfigService } from '../utils/config.service';
 export class MaterialDrawerComponent implements AfterViewInit {
   @ViewChild('appDrawer') appDrawer: ElementRef;
 
+  //on Side nav change 
   @Output() onSideNavChange = new EventEmitter();
 
+  //Material drawer initialization emit
   @Output() onNgMatInit = new EventEmitter();
 
-  version = VERSION;
-  navData: any;
+  //Material drawer version
+  public version = VERSION;
+  
+  //Material drawer data
+  public navData: any;
 
-  constructor(public navService: NavService, public configService: ConfigService) {
+  constructor(public navService: NavService, 
+    public configService: ConfigService) {
     this.configService.onJsonUpdate.subscribe(res => {
       this.navData = res;
       this.navService.isMiniVarient = this.navData['miniVarient'];

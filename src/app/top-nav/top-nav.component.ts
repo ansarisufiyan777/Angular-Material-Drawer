@@ -13,8 +13,8 @@ export class TopNavComponent implements OnInit {
   ngOnInit() {
   }
   ngAfterViewInit(){
-    this.navService.onNavChange.subscribe((data)=>{
-      this.isDrawerOpened = data.isOpened;
+    this.navService.onNavChange.subscribe((flag)=>{
+      this.isDrawerOpened = flag;
     })
   }
 
