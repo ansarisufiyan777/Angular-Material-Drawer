@@ -9,7 +9,7 @@
 >
     <mat-sidenav
         [ngClass]="navData?.miniVarient && !navService?.isExpanded? 'mini-drawer': ''"
-        [ngStyle]="navData?.navItems.style? navData?.navItems.style : ''"
+        [ngStyle]="navData?.navItems?.style? navData?.navItems.style : ''"
         [position]="navData?.position"
         (openedChange)="onNavDraweropenChange()"
         #appDrawer
@@ -18,16 +18,19 @@
     >
         <mat-nav-list *ngIf="!navData?.miniVarient || navData?.miniVarient && navService?.isExpanded">
             <app-nav-list-item
-                *ngFor="let item of navData?.navItems.data"
+                *ngFor="let item of navData?.navItems?.data"
                 [item]="item"
             ></app-nav-list-item>
         </mat-nav-list>
         <mat-nav-list *ngIf="navData?.miniVarient && !navService?.isExpanded">
             <app-nav-list-item-mini
-                *ngFor="let item of navData?.navItems.data"
+                *ngFor="let item of navData?.navItems?.data"
                 [item]="item"
             ></app-nav-list-item-mini>
         </mat-nav-list>
     </mat-sidenav>
-    <router-outlet [ngClass]="navData?.miniVarient ? 'main-container-on-mini-variant' :''"></router-outlet>
+    <div [ngClass]="navData?.miniVarient ? 'main-container-on-mini-variant' :''">
+
+      <router-outlet></router-outlet>
+    </div>
 </mat-sidenav-container>

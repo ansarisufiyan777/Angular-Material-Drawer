@@ -22,8 +22,8 @@ export class NavService {
 
   }
 
-  public emintNavChange() {
-    this.onNavChange.emit(this.appDrawer.opened);
+  public emitNavChange() {
+    this.onNavChange.emit(this.getData(this.appDrawer.opened));
   }
   public closeNav() {
     if (!this.isMiniVarient)

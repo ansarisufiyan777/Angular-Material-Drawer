@@ -14,7 +14,7 @@ export class TopNavComponent implements OnInit {
   }
   ngAfterViewInit() {
     this.navService.onNavChange.subscribe((flag) => {
-      this.isDrawerOpened = flag;
+      this.isDrawerOpened = flag.isOpened;
     })
   }
 

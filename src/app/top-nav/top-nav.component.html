@@ -27,17 +27,17 @@
     <span class="toolbar-spacer"></span>
     <div
         class="right-nav"
-        [ngStyle]="config?.rightMenus.style? config?.rightMenus.style : ''"
+        [ngStyle]="config?.rightMenus?.style? config?.rightMenus.style : ''"
     >
-        <ng-container *ngIf="config?.rightMenus.data">
-            <span *ngFor="let item of config?.rightMenus.data">
+        <ng-container *ngIf="config?.rightMenus?.data">
+            <span *ngFor="let item of config?.rightMenus?.data">
                 <!-- Handle branch node buttons here -->
                 <span *ngIf="item.children && item.children.length > 0">
 
 
                     <button
                         *ngIf="item.displayName?.trim()"
-                        [ngStyle]="item.style? item.style : ''"
+                        [ngStyle]="item?.style? item.style : ''"
                         mat-button
                         [matMenuTriggerFor]="menu.childMenu"
                         [disabled]="item.disabled"
@@ -48,8 +48,8 @@
 
 
                     <button
-                        *ngIf="!item.displayName?.trim()"
-                        [ngStyle]="item.style? item.style : ''"
+                        *ngIf="!item?.displayName?.trim()"
+                        [ngStyle]="item?.style? item.style : ''"
                         mat-icon-button
                         [matMenuTriggerFor]="menu.childMenu"
                         [disabled]="item.disabled"

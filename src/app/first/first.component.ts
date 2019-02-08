@@ -17,7 +17,7 @@ export class FirstComponent implements OnInit {
   constructor(public configService: ConfigService) {
     this.editorOptions = new JsonEditorOptions()
     this.editorOptions.modes = ['code', 'text', 'tree', 'view']; // set all allowed modes
-    //this.options.mode = 'code'; //set only one mode
+    this.editorOptions.mode = 'code'; //set only one mode
     this.configService.onJsonUpdate.subscribe(res => {
       this.navData = res;
     })

@@ -35,7 +35,7 @@ export class MaterialDrawerComponent implements AfterViewInit {
 
   onNavDraweropenChange() {
     this.onSideNavChange.emit(this.navService.appDrawer);
-    this.navService.emintNavChange();
+    this.navService.emitNavChange();
   }
   ngAfterViewInit() {
     this.navService.appDrawer = this.appDrawer;
