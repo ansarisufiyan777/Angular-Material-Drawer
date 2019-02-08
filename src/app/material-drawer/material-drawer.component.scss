@@ -39,12 +39,6 @@
     }
 }
 
-.version-info {
-    font-size: 8pt;
-    float: right;
-    padding: 8px;
-}
-
 //Mini Variant
 /deep/ .mat-sidenav-closed {
     transform: translate3d(0, 0, 0) !important;
@@ -62,6 +56,7 @@
         overflow: hidden;
     }
 }
-.below-toolbar{
-  margin-top: 48px;
+
+.main-container-on-mini-variant {
+    margin-right: 60px;
 }

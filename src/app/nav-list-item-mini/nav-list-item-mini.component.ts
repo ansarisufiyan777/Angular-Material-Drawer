@@ -1,8 +1,8 @@
-import {Component, HostBinding, Input, OnInit, AfterViewInit} from '@angular/core';
-import {NavItem} from '../nav-item';
-import {Router} from '@angular/router';
-import {NavService} from '../utils/nav.service';
-import {animate, state, style, transition, trigger} from '@angular/animations';
+import { Component, HostBinding, Input, OnInit, AfterViewInit } from '@angular/core';
+import { NavItem } from '../nav-item';
+import { Router } from '@angular/router';
+import { NavService } from '../utils/nav.service';
+import { animate, state, style, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-nav-list-item-mini',
@@ -10,8 +10,8 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
   styleUrls: ['./nav-list-item-mini.component.scss'],
   animations: [
     trigger('indicatorRotate', [
-      state('collapsed', style({transform: 'rotate(0deg)'})),
-      state('expanded', style({transform: 'rotate(180deg)'})),
+      state('collapsed', style({ transform: 'rotate(0deg)' })),
+      state('expanded', style({ transform: 'rotate(180deg)' })),
       transition('expanded <=> collapsed',
         animate('225ms cubic-bezier(0.4,0.0,0.2,1)')
       ),
@@ -25,7 +25,7 @@ export class NavListItemMiniComponent implements OnInit {
   @Input() depth: number;
 
   constructor(public navService: NavService,
-              public router: Router) {
+    public router: Router) {
     if (this.depth === undefined) {
       this.depth = 0;
     }
@@ -39,16 +39,16 @@ export class NavListItemMiniComponent implements OnInit {
         this.ariaExpanded = this.expanded;
         // console.log(`${this.item.route} is expanded: ${this.expanded}`);
       }
-    });    
+    });
   }
 
   onItemSelected(item: NavItem) {
     if (!item.children || !item.children.length) {
       this.router.navigate([item.route]);
-      if(item.onClickClose){
+      if (item.onClickClose) {
         this.navService.closeNav();
       }
-      
+
     }
     if (item.children && item.children.length) {
       this.expanded = !this.expanded;

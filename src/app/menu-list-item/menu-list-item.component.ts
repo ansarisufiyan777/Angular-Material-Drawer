@@ -1,8 +1,8 @@
-import {Component, HostBinding, Input, OnInit, ViewChild} from '@angular/core';
-import {NavItem} from '../nav-item';
-import {Router} from '@angular/router';
-import {NavService} from '../utils/nav.service';
-import {animate, state, style, transition, trigger} from '@angular/animations';
+import { Component, HostBinding, Input, OnInit, ViewChild } from '@angular/core';
+import { NavItem } from '../nav-item';
+import { Router } from '@angular/router';
+import { NavService } from '../utils/nav.service';
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { MatMenu } from '@angular/material';
 
 @Component({
@@ -19,7 +19,7 @@ export class MenuListItemComponent implements OnInit {
   @Input() depth: number;
   @Input() matMenu: MatMenu;
   constructor(public navService: NavService,
-              public router: Router) {
+    public router: Router) {
     if (this.depth === undefined) {
       this.depth = 0;
     }
@@ -39,10 +39,10 @@ export class MenuListItemComponent implements OnInit {
   onItemSelected(item: NavItem) {
     if (!item.children || !item.children.length) {
       this.router.navigate([item.route]);
-      if(item.onClickClose){
+      if (item.onClickClose) {
         this.navService.closeNav();
       }
-      
+
     }
     if (item.children && item.children.length) {
       this.expanded = !this.expanded;

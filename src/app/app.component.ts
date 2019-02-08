@@ -10,7 +10,7 @@ import { EventEmitter } from 'events';
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent implements OnInit {
- 
+
   constructor() { }
 
   ngOnInit() {

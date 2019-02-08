@@ -1,18 +1,18 @@
-import {BrowserModule} from '@angular/platform-browser';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {RouterModule} from '@angular/router';
-import {A11yModule} from '@angular/cdk/a11y';
-import {BidiModule} from '@angular/cdk/bidi';
-import {ObserversModule} from '@angular/cdk/observers';
-import {OverlayModule} from '@angular/cdk/overlay';
-import {PlatformModule} from '@angular/cdk/platform';
-import {PortalModule} from '@angular/cdk/portal';
-import {ScrollDispatchModule} from '@angular/cdk/scrolling';
-import {CdkStepperModule} from '@angular/cdk/stepper';
-import {CdkTableModule} from '@angular/cdk/table';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { A11yModule } from '@angular/cdk/a11y';
+import { BidiModule } from '@angular/cdk/bidi';
+import { ObserversModule } from '@angular/cdk/observers';
+import { OverlayModule } from '@angular/cdk/overlay';
+import { PlatformModule } from '@angular/cdk/platform';
+import { PortalModule } from '@angular/cdk/portal';
+import { ScrollDispatchModule } from '@angular/cdk/scrolling';
+import { CdkStepperModule } from '@angular/cdk/stepper';
+import { CdkTableModule } from '@angular/cdk/table';
 import {
   MatAutocompleteModule,
   MatButtonModule,
@@ -42,10 +42,10 @@ import {
   MatToolbarModule,
   MatTooltipModule,
 } from '@angular/material';
-import {AppComponent} from './app.component';
-import {FlexLayoutModule} from '@angular/flex-layout';
-import {NavListItemComponent as NavListItemComponent} from './nav-list-item/nav-list-item.component';
-import {AppRoutingModule} from './app-routing.module';
+import { AppComponent } from './app.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { NavListItemComponent as NavListItemComponent } from './nav-list-item/nav-list-item.component';
+import { AppRoutingModule } from './app-routing.module';
 import { FirstComponent } from './first/first.component';
 import { NavService } from './utils/nav.service';
 import { TopNavComponent } from './top-nav/top-nav.component';
@@ -69,7 +69,7 @@ import { NgJsonEditorModule } from 'ang-jsoneditor';
     ScrollDispatchModule,
     CdkStepperModule,
     CdkTableModule,
-    
+
     // Material
     MatAutocompleteModule,
     MatButtonModule,
@@ -101,7 +101,7 @@ import { NgJsonEditorModule } from 'ang-jsoneditor';
   ],
   declarations: []
 })
-export class MaterialModule {}
+export class MaterialModule { }
 
 @NgModule({
   imports: [
@@ -113,7 +113,7 @@ export class MaterialModule {}
     BrowserAnimationsModule,
     FlexLayoutModule,
     AppRoutingModule,
-    NgJsonEditorModule 
+    NgJsonEditorModule
   ],
   declarations: [
     AppComponent,
@@ -127,4 +127,4 @@ export class MaterialModule {}
   bootstrap: [AppComponent],
   providers: [NavService]
 })
-export class AppModule {}
+export class AppModule { }

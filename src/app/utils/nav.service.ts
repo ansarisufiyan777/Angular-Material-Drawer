@@ -10,7 +10,7 @@ export class NavService {
   public isExpanded: boolean;
   public currentUrl = new BehaviorSubject<string>(undefined);
   public isDrawerOpened = false;
-  public onNavChange: any= new EventEmitter();
+  public onNavChange: any = new EventEmitter();
   constructor(private router: Router) {
 
     //Routing Event
@@ -30,7 +30,7 @@ export class NavService {
       this.appDrawer.close();
     else {
       this.isExpanded = false;
-      this.onNavChange.emit(this.getData(this.isExpanded));      
+      this.onNavChange.emit(this.getData(this.isExpanded));
     }
   }
 
@@ -39,7 +39,7 @@ export class NavService {
       this.appDrawer.open();
     else {
       this.isExpanded = true;
-      this.onNavChange.emit(this.getData(this.isExpanded));      
+      this.onNavChange.emit(this.getData(this.isExpanded));
     }
   }
 
@@ -51,6 +51,7 @@ export class NavService {
       this.onNavChange.emit(this.getData(this.isExpanded));
     }
   }
+
   getData(b): object {
     return {
       drawer: this.appDrawer,

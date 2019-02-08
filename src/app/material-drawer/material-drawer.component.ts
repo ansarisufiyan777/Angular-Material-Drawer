@@ -19,11 +19,11 @@ export class MaterialDrawerComponent implements AfterViewInit {
 
   //Material drawer version
   public version = VERSION;
-  
+
   //Material drawer data
   public navData: any;
 
-  constructor(public navService: NavService, 
+  constructor(public navService: NavService,
     public configService: ConfigService) {
     this.configService.onJsonUpdate.subscribe(res => {
       this.navData = res;
@@ -38,7 +38,7 @@ export class MaterialDrawerComponent implements AfterViewInit {
     this.navService.emintNavChange();
   }
   ngAfterViewInit() {
-    this.navService.appDrawer = this.appDrawer; 
+    this.navService.appDrawer = this.appDrawer;
   }
 
 }
