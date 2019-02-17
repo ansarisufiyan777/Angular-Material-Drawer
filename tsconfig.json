@@ -16,6 +16,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-material-drawer": [
+        "dist/ngx-material-drawer"
+      ],
+      "ngx-material-drawer/*": [
+        "dist/ngx-material-drawer/*"
+      ]
+    }
   }
 }

@@ -3,6 +3,7 @@ import { NavItem } from '../nav-item';
 import { Router } from '@angular/router';
 import { NavService } from '../utils/nav.service';
 import { animate, state, style, transition, trigger } from '@angular/animations';
+import { MatEventEmitterService } from '../utils/mat-event-emitter.service';
 
 @Component({
   selector: 'app-nav-list-item-mini',
@@ -25,6 +26,7 @@ export class NavListItemMiniComponent implements OnInit {
   @Input() depth: number;
 
   constructor(public navService: NavService,
+    public matEventEmitterService: MatEventEmitterService,
     public router: Router) {
     if (this.depth === undefined) {
       this.depth = 0;
@@ -48,11 +50,15 @@ export class NavListItemMiniComponent implements OnInit {
       if (item.onClickClose) {
         this.navService.closeNav();
       }
-
+      this.matEventEmitterService.sideNavItemClick(item);
     }
     if (item.children && item.children.length) {
       this.expanded = !this.expanded;
+      if (this.expanded) {
+        this.matEventEmitterService.sideNavItemExpanded(item);
+      } else {
+        this.matEventEmitterService.sideNavItemCollapsed(item);
+      }
     }
   }
-
 }

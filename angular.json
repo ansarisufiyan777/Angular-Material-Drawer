@@ -133,6 +133,41 @@
           }
         }
       }
+    },
+    "NgxMaterialDrawer": {
+      "root": "projects/ngx-material-drawer",
+      "sourceRoot": "projects/ngx-material-drawer/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-material-drawer/tsconfig.lib.json",
+            "project": "projects/ngx-material-drawer/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-material-drawer/src/test.ts",
+            "tsConfig": "projects/ngx-material-drawer/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-material-drawer/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-material-drawer/tsconfig.lib.json",
+              "projects/ngx-material-drawer/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "AngularMaterialDrawer"

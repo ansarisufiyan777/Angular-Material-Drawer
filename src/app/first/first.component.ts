@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { JsonEditorComponent, JsonEditorOptions } from 'ang-jsoneditor';
-import { ConfigService } from '../utils/config.service';
+import { MatEventEmitterService } from '../utils/mat-event-emitter.service';
 
 @Component({
   selector: 'app-first',
@@ -14,20 +14,21 @@ export class FirstComponent implements OnInit {
 
   @ViewChild(JsonEditorComponent) editor: JsonEditorComponent;
 
-  constructor(public configService: ConfigService) {
+  constructor(public matEventEmitterService: MatEventEmitterService) {
     this.editorOptions = new JsonEditorOptions()
     this.editorOptions.modes = ['code', 'text', 'tree', 'view']; // set all allowed modes
     this.editorOptions.mode = 'code'; //set only one mode
-    this.configService.onJsonUpdate.subscribe(res => {
+    this.matEventEmitterService.onDataChange.subscribe(res => {
       this.navData = res;
     })
 
   }
   ngOnInit(): void {
     //throw new Error("Method not implemented.");
+   
   }
   getData($event) {
     console.log($event)
-    this.configService.updateJSON($event);
+    this.matEventEmitterService.dataChange($event);
   }
 }

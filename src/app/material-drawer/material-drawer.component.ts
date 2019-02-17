@@ -1,44 +1,88 @@
-import { Component, ViewChild, ElementRef, ViewEncapsulation, AfterViewInit, EventEmitter, Input, Output } from '@angular/core';
+import { Component, ViewChild, ElementRef, ViewEncapsulation, AfterViewInit, EventEmitter, Input, Output, OnInit } from '@angular/core';
 import { VERSION } from '@angular/material';
 import { NavItem } from '../nav-item';
 import { NavService } from '../utils/nav.service';
-import { ConfigService } from '../utils/config.service';
+import { MatEventEmitterService } from '../utils/mat-event-emitter.service';
 @Component({
-  selector: 'app-material-drawer',
+  selector: 'ngx-material-drawer',
   templateUrl: './material-drawer.component.html',
   styleUrls: ['./material-drawer.component.scss']
 })
-export class MaterialDrawerComponent implements AfterViewInit {
+export class MaterialDrawerComponent implements AfterViewInit, OnInit {
   @ViewChild('appDrawer') appDrawer: ElementRef;
 
-  //on Side nav change 
-  @Output() onSideNavChange = new EventEmitter();
 
-  //Material drawer initialization emit
-  @Output() onNgMatInit = new EventEmitter();
+  @Input('data') navData: any;
+
+  @Output() public onMatDrawerInit: any = new EventEmitter();
+  @Output() public onMatDrawerAfterViewInit: any = new EventEmitter();
+  @Output() public onNavStateChange: any = new EventEmitter();
+  @Output() public onDataChange: any = new EventEmitter();
+  @Output() public onSideNavOpen: any = new EventEmitter();
+  @Output() public onSideNavClosed: any = new EventEmitter();
+  @Output() public onMinVarientChange: any = new EventEmitter();
+  @Output() public onSideNavItemClick: any = new EventEmitter();
+  @Output() public onSideNavItemExpanded: any = new EventEmitter();
+  @Output() public onSideNavItemCollapsed: any = new EventEmitter();
+  @Output() public onMenuItemClick: any = new EventEmitter();
+
 
   //Material drawer version
   public version = VERSION;
 
-  //Material drawer data
-  public navData: any;
-
   constructor(public navService: NavService,
-    public configService: ConfigService) {
-    this.configService.onJsonUpdate.subscribe(res => {
+    public matEventEmitterService: MatEventEmitterService) {
+    this.subscribeToEventEmitter();
+  }
+
+  public ngOnInit() {
+    this.matEventEmitterService.dataChange(this.navData);
+    this.matEventEmitterService.onDataChange.subscribe(res => {
       this.navData = res;
       this.navService.isMiniVarient = this.navData['miniVarient'];
-      this.navService.isExpanded = this.navData['opened'];
-      this.onNgMatInit.emit(this.navData);
+      this.navService.isOpened = this.navData['opened'];
     })
+    this.matEventEmitterService.matDrawerInit(this.navData);
   }
 
-  onNavDraweropenChange() {
-    this.onSideNavChange.emit(this.navService.appDrawer);
-    this.navService.emitNavChange();
-  }
-  ngAfterViewInit() {
+  public ngAfterViewInit() {
     this.navService.appDrawer = this.appDrawer;
+    this.matEventEmitterService.matDrawerAfterViewInit(this.navData);
+  }
+  private subscribeToEventEmitter() {
+    this.matEventEmitterService.onMatDrawerInit.subscribe((event) => {
+      this.onMatDrawerInit.emit(event);
+    })
+    this.matEventEmitterService.onMatDrawerAfterViewInit.subscribe((event) => {
+      this.onMatDrawerAfterViewInit.emit(event);
+    })
+    this.matEventEmitterService.onNavStateChange.subscribe((event) => {
+      this.onNavStateChange.emit(event);
+    })
+    this.matEventEmitterService.onDataChange.subscribe((event) => {
+      this.onDataChange.emit(event);
+    })
+    this.matEventEmitterService.onSideNavOpen.subscribe((event) => {
+      this.onSideNavOpen.emit(event);
+    })
+    this.matEventEmitterService.onSideNavClosed.subscribe((event) => {
+      this.onSideNavClosed.emit(event);
+    })
+    this.matEventEmitterService.onMinVarientChange.subscribe((event) => {
+      this.onMinVarientChange.emit(event);
+    })
+    this.matEventEmitterService.onSideNavItemClick.subscribe((event) => {
+      this.onSideNavItemClick.emit(event);
+    })
+    this.matEventEmitterService.onSideNavItemExpanded.subscribe((event) => {
+      this.onSideNavItemExpanded.emit(event);
+    })
+    this.matEventEmitterService.onSideNavItemCollapsed.subscribe((event) => {
+      this.onSideNavItemCollapsed.emit(event);
+    })
+    this.matEventEmitterService.onMenuItemClick.subscribe((event) => {
+      this.onMenuItemClick.emit(event);
+    })
   }
 
 }

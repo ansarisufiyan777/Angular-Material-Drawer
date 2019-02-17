@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { NavService } from '../utils/nav.service';
+import { MatEventEmitterService } from '../utils/mat-event-emitter.service';
 
 @Component({
   selector: 'app-top-nav',
@@ -8,12 +9,18 @@ import { NavService } from '../utils/nav.service';
 })
 export class TopNavComponent implements OnInit {
   @Input() config: any;
-  constructor(public navService: NavService) { }
+  constructor(public matEventEmitterService: MatEventEmitterService,public navService:NavService) { }
   public isDrawerOpened;
   ngOnInit() {
   }
   ngAfterViewInit() {
-    this.navService.onNavChange.subscribe((flag) => {
+    this.matEventEmitterService.onNavStateChange.subscribe((flag:any) => {
+      this.isDrawerOpened = flag.isOpened;
+    })
+    this.matEventEmitterService.onSideNavClosed.subscribe((flag:any) => {
+      this.isDrawerOpened = flag.isOpened;
+    })
+    this.matEventEmitterService.onSideNavClosed.subscribe((flag:any) => {
       this.isDrawerOpened = flag.isOpened;
     })
   }

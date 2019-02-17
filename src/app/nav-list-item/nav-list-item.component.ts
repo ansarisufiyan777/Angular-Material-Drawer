@@ -1,8 +1,9 @@
-import { Component, HostBinding, Input, OnInit, AfterViewInit } from '@angular/core';
+import { Component, HostBinding, Input, OnInit, AfterViewInit, Output, EventEmitter } from '@angular/core';
 import { NavItem } from '../nav-item';
 import { Router } from '@angular/router';
 import { NavService } from '../utils/nav.service';
 import { animate, state, style, transition, trigger } from '@angular/animations';
+import { MatEventEmitterService } from '../utils/mat-event-emitter.service';
 
 @Component({
   selector: 'app-nav-list-item',
@@ -23,9 +24,9 @@ export class NavListItemComponent implements OnInit {
   expanded: boolean;
   @HostBinding('attr.aria-expanded') ariaExpanded = this.expanded;
   @Input() item: NavItem;
-  @Input() depth: number;
-
+  @Input() depth: number;  
   constructor(public navService: NavService,
+    public matEventEmitterService:MatEventEmitterService,
     public router: Router) {
     if (this.depth === undefined) {
       this.depth = 0;
@@ -49,10 +50,15 @@ export class NavListItemComponent implements OnInit {
       if (item.onClickClose) {
         this.navService.closeNav();
       }
-
+      this.matEventEmitterService.sideNavItemClick(item);
     }
     if (item.children && item.children.length) {
       this.expanded = !this.expanded;
+      if (this.expanded) {
+        this.matEventEmitterService.sideNavItemExpanded(item);
+      } else {
+        this.matEventEmitterService.sideNavItemCollapsed(item);
+      }
     }
   }
 }
